@@ -3,6 +3,7 @@ var express = require("express");
 var app = express();
 require("dotenv").config();
 const dbHost = process.env.MONGODB;
+const mainURL = process.env.HOST;
 
 // express formidable is used to parse the form data values
 var formidable = require("express-formidable");
@@ -49,7 +50,7 @@ app.use("/public/fonts", express.static(__dirname + "/public/fonts"));
 app.set("view engine", "ejs");
 
 // main URL of website
-var mainURL = "https://pdf-management-py11.onrender.com";
+// var mainURL = "https://pdf-management-py11.onrender.com";
 
 // global database object
 var database = null;
