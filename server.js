@@ -200,7 +200,6 @@ http.listen(3000, function () {
   console.log("Server started at " + mainURL);
 
   // connect with mongo DB server
-  console.log(dbHost , "harry")
   mongoClient.connect(
     dbHost,
     {
