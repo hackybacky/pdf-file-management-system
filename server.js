@@ -196,7 +196,7 @@ function recursiveSearchShared(files, query) {
 }
 
 // start the http server
-http.listen(3000, function () {
+http.listen(mainURL, function () {
   console.log("Server started at " + mainURL);
 
   // connect with mongo DB server
